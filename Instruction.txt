@@ -1,0 +1,14 @@
+1. Spatial to singular
+Converts LIBD dataset into dataframe of assays and meta-data. Take input of sce SpatialLIBD, scrape the assay matrix, spatial coordinate metadata and layer annotation into dataframe output in to form of csv (or could be modified into anndata)
+
+2. Datapoint Preprocess
+Converts spatial coordinates metadata into 2D matrix equivalent of image. The input is spatial coordinates of genes in the specific sample and turning it into .npy 2D matrix (this dataset will output 33538 .npy file representing each gene distribution over the sample)
+
+3. Neural Net
+Take the .npy 2D matrix as input to learn the embedded features. Output will be matrix of embedded features.
+
+4. Datapoint concat
+Take the embedded feature matrix and assay matrix and comibined it into augmented embedded feature matrix for analysis step.
+
+5. BEER LIBD SpatialViz
+Process of analysis using augmented feature dataframe of multiple samples. Batch effect removal using BEER including the preprocess of the assays. Also includes visualization for the clustering using Seurat module of louvain method. output includes Cluster labels, ARI scores, UMAP Visualization (Batch + clusters), on tissue cluster visualization. 
