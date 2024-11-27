@@ -1,3 +1,8 @@
+Run the notebook sequentially from 0 to 6
+
+0. Fetch Data 
+Fetch SpatialLIBD data from source into r-data file format. 
+
 1. Spatial to singular
 Converts LIBD dataset into dataframe of assays and meta-data. Take input of sce SpatialLIBD, scrape the assay matrix, spatial coordinate metadata and layer annotation into dataframe output in to form of csv (or could be modified into anndata)
 
@@ -12,3 +17,6 @@ Take the embedded feature matrix and assay matrix and comibined it into augmente
 
 5. BEER LIBD SpatialViz
 Process of analysis using augmented feature dataframe of multiple samples. Batch effect removal using BEER including the preprocess of the assays. Also includes visualization for the clustering using Seurat module of louvain method. output includes Cluster labels, ARI scores, UMAP Visualization (Batch + clusters), on tissue cluster visualization. 
+
+6. GNN Joint
+Run the combined pipeline of our GSI and GraphST.
