@@ -1,0 +1,3 @@
+[submodule "BEER"]
+	path = BEER
+	url = https://github.com/jumphone/BEER.git
