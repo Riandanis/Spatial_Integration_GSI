@@ -13,3 +13,14 @@ Run R_install.r with Rscript to install from r_dependencies.csv
 ```
 Rscript R_install.r
 ```
+This repository also include BEER submodule that needs to be intialized. Use `--recurse-submodules` when cloning the repository or use 'git submodule update --init --recursive'
+
+```
+git clone --recurse-submodules https://github.com/Riandanis/Spatial_Integration_GSI.git
+```
+or
+```
+git clone https://github.com/Riandanis/Spatial_Integration_GSI.git
+cd Spatial_Integration_GSI
+git submodule update --init --recursive
+```
