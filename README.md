@@ -4,15 +4,17 @@ Implementation of Gene Spatial Integration: enhancing spatial transcriptomics an
 
 Function explanation for the notebooks contained in Instruction.txt
 
-## Python dependencies
+## Python requirements
 Packages needed to be installed for Python environment are listed on python_requirements.txt
 
-## R dependencies
+## R requirements
 Packages needed to be installed for R environment are listed on r_dependencies.csv.
 Run R_install.r with Rscript to install from r_dependencies.csv
 ```
 Rscript R_install.r
 ```
+
+## Submodules
 This repository also include BEER submodule that needs to be intialized. Use `--recurse-submodules` when cloning the repository or use 'git submodule update --init --recursive'
 
 ```
