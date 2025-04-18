@@ -327,7 +327,7 @@ tinycss2==1.2.1
 tokenizers==0.20.1
 tomli @ file:///opt/conda/conda-bld/tomli_1657175507142/work
 toolz @ file:///croot/toolz_1667464077321/work
-torch==2.0.1
+torch==2.6.0
 torch-cluster==1.6.1+pt20cu117
 torch-geometric==2.3.1
 torch-scatter==2.1.1+pt20cu117
